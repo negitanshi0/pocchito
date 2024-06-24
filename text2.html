@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pochitto</title>
+<link rel="stylesheet"href="style.css">
+</head>
+<h2></h2>
+
+<h2 style="text-align:center">
+<div style="text-align:center">
+<img src="IMG_0712.jpeg" width=1600px height=1300px>
+</div>
+<div class="container">
+<img src="goods49.jpeg">
+<p> </p>
+</div>
+<br><br><br><br>
+<div style="text-align:center">
+<img src="Pochitto不具合.jpg">
+</div>
+</h2>
+
+<body>
+<div style="text-align:center">
+<style>
+.time{
+    margin: auto;
+    text-align:center;
+    font-size: 65px;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    right: 50px;
+    left: 310px;
+}
+.kome{
+    margin: auto;
+    text-align:center;
+    font-size: 45px;
+    color: red;
+    position: relative;
+    top: 10px;
+    bottom: 0px;
+    right: 0px;
+    left: 300px;
+}
+</style>
+<a class="time">
+偽造防止用の時間表記
+</a>
+<b>
+<a class="time">
+<div style="font-size: 85px;">
+2024/4/22
+<span id="real-time">
+  <script type="text/javascript">
+function Time() {
+   var realTime = new Date();
+   var hour = realTime.getHours();
+   var minutes  = realTime.getMinutes().toString().padStart(2, '0');
+   var seconds  = realTime.getSeconds().toString().padStart(2, '0');
+   var milliseconds = realTime.getMilliseconds();
+   var n1 = Math.floor(milliseconds / 100) % 10; //1桁目
+   var text = hour + ":" + minutes + ":" + seconds + ":" + n1;
+   document.getElementById("real-time").innerHTML = text;
+}
+setInterval('Time()',1);
+  </script>
+</div>
+</a>
+</b>
+<a class="kome">
+※入場の際はこちらの画面を提示してください
+</a>
+<br>
+<br>
+</div>
+</body>
+    
+<header class="header"></header>
+  <main>
+    <div class="contents3">
+    </div>
+  </main>
+<footer></footer>
+<div class="img-wrap">
+  <img src="注意喚起.jpeg" id="fixedImage" width=1600px height=700px>
+</div>
+    
+<div style="text-align:center">
+<img src="Pochitto下部2.jpg">
+</div>
+
+</html>
